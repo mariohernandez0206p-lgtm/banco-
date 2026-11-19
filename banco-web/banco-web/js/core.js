@@ -3,7 +3,8 @@
    core.js — cliente de la API, sesión, utilidades de UI y router
    ============================================================ */
 
-const DEFAULT_BASE = "http://localhost:8000/api/v1";
+const DEFAULT_BASE = "https://api-banca.onrender.com/api/v1";
+
 const baseUrl = () => (localStorage.getItem("apiBase") || DEFAULT_BASE).replace(/\/+$/, "");
 
 /* ---------- Sesión ---------- */
